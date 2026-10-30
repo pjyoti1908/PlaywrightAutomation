@@ -35,5 +35,6 @@ test('Intercept the API- modify the response --- passing fake response', async (
     await page.locator("button[routerlink*='myorders']").click();
     await page.waitForResponse("https://rahulshettyacademy.com/api/ecom/order/get-orders-for-customer/*");
     console.log(await page.locator(".mt-4").textContent());
+     console.log(await page.locator(".mt-4").textContent());
 
 });
